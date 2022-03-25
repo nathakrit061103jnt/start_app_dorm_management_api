@@ -1,7 +1,6 @@
 <?php
 header('Content-Type: application/json');
-include 'DatabaseConfig.php';
-$conn = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+include 'DatabaseConfig.php'; 
 $sql = "SELECT * FROM `tbl_bulletin_board`";
 $result = mysqli_query($conn, $sql);
 if (!$result) {

@@ -11,8 +11,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 include_once "./DatabaseConfig.php";
-
-$con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+ 
 
 $r_email = $_POST['r_email'];
 $r_name = $_POST["r_name"];

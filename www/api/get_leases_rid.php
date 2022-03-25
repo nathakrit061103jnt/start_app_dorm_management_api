@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: application/json');
 if (isset($_GET["rid"])) {
-    include 'DatabaseConfig.php';
-    $conn = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+    include 'DatabaseConfig.php'; 
     $sql = "SELECT * FROM leases l WHERE rid='{$_GET["rid"]}'";
     $result = mysqli_query($conn, $sql);
     if (!$result) {

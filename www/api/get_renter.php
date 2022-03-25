@@ -12,8 +12,7 @@
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
  
  
-    include 'DatabaseConfig.php';
-    $conn = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName); 
+    include 'DatabaseConfig.php'; 
     $sql ="";
     if(isset($_GET["rid"])){
          $rid=$_GET["rid"];

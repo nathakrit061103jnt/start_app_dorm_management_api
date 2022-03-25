@@ -12,8 +12,7 @@ header("Access-Control-Max-Age: 3600");
 
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-include 'DatabaseConfig.php';
-$con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+include 'DatabaseConfig.php'; 
 
 $invoice_id = $_POST['invoice_id'];
 $leases_id = $_POST['leases_id'];

@@ -12,7 +12,7 @@ header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 
-$con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+include_once "./DatabaseConfig.php";
 $m_id = $_POST['m_id'];
 $Sql_Query = "DELETE FROM movies WHERE movie_id ='$m_id' ";
 

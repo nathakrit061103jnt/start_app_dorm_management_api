@@ -24,7 +24,7 @@ if ($_POST['u_email'] == null or $_POST['u_password'] == null or $_POST["u_name"
     // echo 'กรุณากรอกข้อมูลให้ครบ';
 
 } else {
-    $con = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+    include_once "./DatabaseConfig.php";
 
     $u_email = $_POST['u_email'];
     $u_password = $_POST['u_password'];

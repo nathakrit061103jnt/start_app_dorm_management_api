@@ -1,8 +1,7 @@
 <?php
 header('Content-Type: application/json');
 if (isset($_GET["leases_id"])) {
-    include 'DatabaseConfig.php';
-    $conn = mysqli_connect($HostName, $HostUser, $HostPass, $DatabaseName);
+    include 'DatabaseConfig.php'; 
     $sql = "SELECT * FROM invoice WHERE leases_id='{$_GET["leases_id"]}'  ORDER BY `invoice`.`invoice_id` DESC";
     $result = mysqli_query($conn, $sql);
     if (!$result) {
